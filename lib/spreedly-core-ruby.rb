@@ -3,6 +3,7 @@ require 'set'
 require 'httparty'
 require 'active_support/core_ext/hash/conversions'
 
+require 'spreedly-core-ruby/version'
 require 'spreedly-core-ruby/base'
 require 'spreedly-core-ruby/payment_method'
 require 'spreedly-core-ruby/gateway'
