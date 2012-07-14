@@ -19,7 +19,7 @@ module SpreedlyCore
     # Lookup the PaymentMethod by token
     def self.find(token)
       return nil if token.nil? 
-      verify_get("https://spreedlycore.com/v1/payment_methods/#{token}.xml",
+      verify_get("http://core.spreedly.dev:11001/payment_methods/#{token}.xml",
                  :has_key => "payment_method") do |response|
         new(response.parsed_response["payment_method"])
       end
